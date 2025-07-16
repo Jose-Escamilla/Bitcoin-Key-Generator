@@ -17,14 +17,30 @@ Para poner en perspectiva las probabilidades involucradas:
   `2^256 ≈ 1.16 × 10^77` posibles claves únicas.
 
 - 🎯 **Probabilidad de encontrar una clave privada específica**:  
+Como todas las claves son igualmente probables:  
+  `1 / 2^256 ≈ 8.6 × 10^-78` 
   1 entre  
   `115,792,089,237,316,195,423,570,985,008,687,907,853,269,984,665,640,564,039,457,584,007,913,129,639,936`
 
 - 🌌 **Comparación astronómica**:  
-  Hay más claves privadas posibles que átomos estimados en el universo observable (aproximadamente `10^80`).
+  Se estima que hay aproximadamente `10^80` átomos en el universo observable.  
+  El número de claves privadas posibles (≈`10^77`) está en un rango comparable.  
+  > **¡Hay casi tantas claves como átomos en el universo!**
 
 - ⏱️ **Probabilidad práctica**:  
-  Incluso verificando **un millón de claves por segundo**, durante **miles de millones de años**, las probabilidades de encontrar una clave con saldo real seguirían siendo prácticamente **cero**.
+  Aun verificando `1,000,000` claves por segundo durante `13.8 mil millones de años`:
+  
+  - Segundos totales:  
+    `13.8 × 10^9 × 365.25 × 24 × 3600 ≈ 4.354 × 10^17`
+  
+  - Claves verificadas:  
+    `10^6 × 4.354 × 10^17 = 4.354 × 10^23`
+  
+  - Proporción del total:  
+    `4.354 × 10^23 / 2^256 ≈ 3.76 × 10^-54`
+
+  **Resultado**: Incluso con recursos extremos, la fracción explorada del espacio de claves sería insignificante.  
+  > Las probabilidades de encontrar una clave válida con saldo real seguirían siendo prácticamente **cero**.
 
 ### Comparaciones para entender la escala:
 - Probabilidad de ganar la lotería nacional: ~1 en 14 millones
